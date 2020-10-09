@@ -1,0 +1,484 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/logoo1.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#about">What we Do</a></li>
+                                                <li><a href="#">NGO</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login1' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup1' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Public</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login2' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup2' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Volunteer</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#contact">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="{% url 'upcoming' %}" class="btn header-btn">Upcoming Events</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        
+        <!-- slider Area Start-->
+        <div class="slider-area position-relative">
+            <div class="slider-active dot-style">
+                <!-- Single Slider -->
+                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".2s">Giving Back</h1>
+                                    <P data-animation="fadeInUp" data-delay=".4s">An Initiative to bring a smile on every struggling face.</P>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn">
+                                        <a href="industries.html" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Join Us Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Slider -->
+                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".2s">Giving Back</h1>
+                                    <P data-animation="fadeInUp" data-delay=".4s">An Initiative to connect all the local volunteers with the local NGO's.</P>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn">
+                                        <a href="industries.html" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Join Us Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Slider -->
+                <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".2s">Giving Back</h1>
+                                    <P data-animation="fadeInUp" data-delay=".4s">An Initiative enabling the NGO's to bring local population in serving the society and the environment.</P>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn">
+                                        <a href="industries.html" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Join Us Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- slider Area End-->
+        <!--? Visit Our Tailor Start -->
+        <div class="visit-tailor-area fix">
+            <!--Right Contents  -->
+            <div class="tailor-offers"></div>
+            <!-- left Contents -->
+            <div class="tailor-details" id="about">
+                <span>Our Mission</span>
+                <h2>Our main goal is to bring a smile on every struggling face</h2>
+                <p>We are network of volunteers who volunteer to deliver essentials like food, clothes, footwears, books, toys, donations etc to all the NGO's registered under the Government of India in various cities. Our volunteers work on locality basis and deliver the essentials from the local city residences to the NGO's in that locality in a way reducing the need for normal people to travel to NGO's.<br> We also offer the facility to NGO's for calling out to the city population for any events like tree plantations, beach cleaning, animal protection etc on given days.</p>
+                <p class="pera-bottom">Our mission is to bring a smile on every struggling face. In this way, we bring happiness to the people in need, satisfaction to the people who donate essentials and pride to volunteers for serving the society.</p>
+                <div class="footer-tittles">
+                    <p>Team, Giving Back</p>
+                    <h2>Dark Knights</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Visit Our Tailor End -->
+        <!--? Services Area Start -->
+        <div class="service-area section-padding30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-11">
+                        <div class="single-cat text-center mb-30">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/orphans.jfif' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="#">Orphan care</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-11">
+                        <div class="single-cat active text-center mb-30">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/tree.jpg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="#">Environment care</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-11">
+                        <div class="single-cat text-center mb-30">
+                            <div class="cat-icon">
+                                <img src="{% static 'assets/img/gallery/beach.jpeg' %}" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="#">Water body care</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Area End -->
+        <!--? About Area Start -->
+        <section class="support-company-area fix pt-10">
+            <div class="support-wrapper align-items-center">
+                <div class="left-content">
+                    <!-- section tittle -->
+                    <div class="section-tittle section-tittle2 mb-30">
+                        <span>Why You Should join us as a Volunteer</span>
+                        <h2>A network of delivery from donors to donee.</h2>
+                    </div>
+                    <div class="support-caption">
+                        <p class="pera-top">Presence in 23 cities, serving many lives. A network of more than 230 volunteers contributing to this kind cause.</p>
+                        <a href="#" class="border-btn">Join Us Now</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <!-- img -->
+                    <div class="right-img">
+                        <img src="{% static 'assets/img/gallery/safe_in.png' %}" alt="">
+                    </div>
+                    <div class="support-img-cap text-center d-flex">
+                        <div class="single-one">
+                            <span>23</span>
+                            <p>Cities</p>
+                        </div>
+                        <div class="single-two">
+                            <span>230</span>
+                            <p>Volunteers countrywide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!--? Our Cases Start -->
+        <div class="our-cases-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-lg-10 ">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-80">
+                            <h2>Every day 6,000 people give back something</h2>
+                            <p class="pl-20 pr-20">We accept all your donations ranging from food, clothes, footwear, books, toys etc. and ensure that they reach the needy hands and bring a smile on their faces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cases mb-40">
+                            <div class="cases-img">
+                                <img src="{% static 'assets/img/gallery/clothes.jpg' %}" alt="">
+                            </div>
+                            <div class="cases-caption">
+                                <h3><a href="#">Giving back Clothes</a></h3>
+                                <p>Someone is waiting for your old clothes or footwears to arrive. Please donate them instead of throwing and contribute to the cause.</p>
+                                <!-- Progress Bar -->
+                                <div class="single-skill mb-15">
+                                    <div class="bar-progress">
+                                        <div id="bar1" class="barfiller">
+                                            <div class="tipWrap">
+                                                <span class="tip"></span>
+                                            </div>
+                                            <span class="fill" data-percentage="45"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / progress -->
+                                <div class="prices">
+                                    <p><span>29.6 million orphans in India.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cases mb-40">
+                            <div class="cases-img">
+                                <img src="{% static 'assets/img/gallery/food.jpg' %}" alt="">
+                            </div>
+                            <div class="cases-caption">
+                                <h3><a href="#">Giving back Food</a></h3>
+                                <p>The food wastage from your occasions can be the bowl of happiness for many. Please inform us instead of throwing the food and contribute to the cause.</p>
+                                <!-- Progress Bar -->
+                                <div class="single-skill mb-15">
+                                    <div class="bar-progress">
+                                        <div id="bar2" class="barfiller">
+                                            <div class="tipWrap">
+                                                <span class="tip"></span>
+                                            </div>
+                                            <span class="fill" data-percentage="80"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prices">
+                                    <p><span>200 million sleep hungry daily.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cases">
+                            <div class="cases-img">
+                                <img src="{% static 'assets/img/gallery/books.jpg' %}" alt="">
+                            </div>
+                            <div class="cases-caption">
+                                <h3><a href="#">Giving back Books</a></h3>
+                                <p>Sometimes our old books can enlighten the minds who cannot afford these costly books. Please donate your old books and contribute to the cause.</p>
+                                <!-- Progress Bar -->
+                                <div class="single-skill mb-15">
+                                    <div class="bar-progress">
+                                        <div id="bar3" class="barfiller">
+                                            <div class="tipWrap">
+                                                <span class="tip"></span>
+                                            </div>
+                                            <span class="fill" data-percentage="60"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prices">
+                                    <p><span>35 million children don't go to school.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <footer id="contact">
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+           <div class="footer-area footer-padding">
+               <div class="container ">
+                   <div class="row justify-content-between">
+                       <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
+                           <div class="single-footer-caption mb-50">
+                               <div class="single-footer-caption mb-30">
+                                   <!-- logo -->
+                                   <div class="footer-logo mb-35">
+                                       <a href="index.html"><img src="{% static 'assets/img/logo/logo.jpg' %}" alt=""></a>
+                                   </div>
+                                   <div class="footer-tittle">
+                                       <div class="footer-pera">
+                                           <p>The feeling of extreme satisfaction comes when you bring a smile on a struggling face by your deeds.</p>
+                                       </div>
+                                   </div>
+                                   <!-- social -->
+                                   <div class="footer-social">
+                                       <a href="#"><i class="fab fa-twitter"></i></a>
+                                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                       <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Our Events</h4>
+                                   <ul>
+                                       <li><a href="#">Donations</a></li>
+                                       <li><a href="#">Environment protection</a></li>
+                                       <li><a href="#">Child care</a></li>
+                                       <li><a href="#">Old age care</a></li>
+                                       <li><a href="#">Animal protection</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Company</h4>
+                                   <ul>
+                                       <li><a href="#">About</a></li>
+                                       <li><a href="#">Review</a></li>
+                                       <li><a href="#">Insights</a></li>
+                                       <li><a href="#">Career</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Contact us</h4>
+                                   <ul>
+                                       <li><a href="#">darkknights@gmail.com</a></li>
+                                       <li><a href="#">15/A, Tower Road, Anantapur</a></li>
+                                       <li><a href="#">Privacy Policy</a></li>
+                                       <li class="number"><a href="#">(+91) 90-**-******</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- footer-bottom area -->
+           <div class="footer-bottom-area">
+               <div class="container">
+                   <div class="footer-border">
+                       <div class="row d-flex align-items-center">
+                           <div class="col-xl-12 ">
+                               <div class="footer-copy-right text-center">
+                                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="{% static './assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static './assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static './assets/js/popper.min.js' %}"></script>
+    <script src="{% static './assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static './assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static './assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static './assets/js/slick.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static './assets/js/wow.min.js' %}"></script>
+    <script src="{% static './assets/js/animated.headline.js' %}"></script>
+    <script src="{% static './assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Date Picker -->
+    <script src="{% static './assets/js/gijgo.min.js' %}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{% static './assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static './assets/js/jquery.sticky.js' %}"></script>
+    <!-- Progress -->
+    <script src="{% static './assets/js/jquery.barfiller.js' %}"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{% static './assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static './assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static './assets/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static './assets/js/hover-direction-snake.min.js' %}"></script>
+
+    <!-- contact js -->
+    <script src="{% static './assets/js/contact.js' %}"></script>
+    <script src="{% static './assets/js/jquery.form.js' %}"></script>
+    <script src="{% static './assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static './assets/js/mail-script.js' %}"></script>
+    <script src="{% static './assets/js/jquery.ajaxchimp.min.js' %}"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="{% static './assets/js/plugins.js' %}"></script>
+    <script src="{% static './assets/js/main.js' %}"></script>
+    
+</body>
+</html>

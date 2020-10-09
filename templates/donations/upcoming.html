@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <style>
+            .box{
+                background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+                
+            }
+            .box h1{
+                color: white;
+                margin-left: 50px;
+                font-size: 50px;
+            }
+            .box1{
+                background-color: white;
+                margin-top: 40px;
+                margin-left: 50px;
+                width: 370px;
+                height: 320px;
+                box-shadow: 5px 7px #48c1b9;
+            }
+            .box1 h3{
+                color: rgb(108, 196, 231);
+                font-size: 20px;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            .box1 label{
+                font-size: 15px;
+                color:black ;
+                font-weight: 450;
+                margin-left: 30px;
+
+            }
+            .box1 button {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #6fd66c;
+                width: 150px;
+                margin-left: 30px;
+                padding: 10px;
+            }
+            .box1 button:hover {
+                background-color:  #6fd66c; /* Green */
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/">What we Do</a></li>
+                                                <li><a href="{% url 'home1' %}">NGO</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login1' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup1' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Public</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login2' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup2' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Volunteer</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'login' %}">Log In</a></li>
+                                                        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#contact">Contact</a></li>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="#" class="btn header-btn">Upcoming Events</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+        <div class="box">
+            <br>
+            <br>
+            <br>
+            <h1>Host The Events</h1>
+        <div style="display: flex;flex-wrap: wrap;">
+            
+                {% for i in q %}
+                <div  class="box1">
+                    {% if count != q1 %}
+                        <div style="display: block;padding:10px">
+                            <header><h3>Name &nbsp;:&nbsp;{{i.name5}}</h3></header><br>
+                            <label>Place:&nbsp;:&nbsp;{{i.place5}}</label>
+                            <br>
+                            <label>Cause:&nbsp;:&nbsp;{{i.cause5}}</label>
+                            <br>
+                            <label>Date&nbsp;:&nbsp;{{i.date5}}</label>
+                            <br>
+                            <label>Time&nbsp;:&nbsp;{{i.time5}}</label>
+                            <br>
+                            
+                        </div>
+                        <br>
+                        <br>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            
+        </div>
+    </div>
+    </body>
+</html>
