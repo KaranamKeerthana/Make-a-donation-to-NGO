@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'ngo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd72cn97acr30j4',
-        'USER': 'olgzcnpuvpbion',
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME':'d72cn97acr30j4',
+        'USER':'olgzcnpuvpbion',
         'PASSWORD':'27bfcc0bd51c6d7f7c18871b94aaf895cdd99e695445b6a40ae7edce131dd6b3',
         'HOST':'ec2-54-164-134-207.compute-1.amazonaws.com',
         'PORT':'5432',
