@@ -1,0 +1,193 @@
+body{
+    background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+}
+.box{
+    background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+    
+}
+.box h1{
+    color: white;
+    margin-left: 50px;
+    font-size: 50px;
+}
+.box1{
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 370px;
+    box-shadow: 5px 7px #48c1b9;
+}
+.box1 h3{
+    color: rgb(108, 196, 231);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.box1 label{
+    font-size: 15px;
+    color:black ;
+    font-weight: 450;
+    margin-left: 30px;
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    body{
+        background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .box h1{
+        color: white;
+        margin-left: 0px;
+        font-size: 50px;
+        word-wrap: break-word;
+    }
+    .box1{
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 80%;
+        box-shadow: 5px 7px #48c1b9;
+    }
+    .box1 h3{
+        color: rgb(108, 196, 231);
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        word-wrap: break-word;
+    }
+    .box1 label{
+        font-size: 15px;
+        color:black ;
+        font-weight: 450;
+        margin-left: 30px;
+        word-wrap: break-word;
+    
+    }
+    .box1 button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #6fd66c;
+        width: 150px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    .box1 button:hover {
+        background-color:  #6fd66c; /* Green */
+        color: white;
+    }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    body{
+        background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+        background-repeat: no-repeat;
+
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .box h1{
+        color: white;
+        margin-left: 0px;
+        font-size: 50px;
+        word-wrap: break-word;
+    }
+    .box1{
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 10px;
+        width: 50%;
+        box-shadow: 5px 7px #48c1b9;
+    }
+    .box1 h3{
+        color: rgb(108, 196, 231);
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        word-wrap: break-word;
+    }
+    .box1 label{
+        font-size: 15px;
+        color:black ;
+        font-weight: 450;
+        margin-left: 30px;
+        word-wrap: break-word;
+    
+    }
+    .box1 button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #6fd66c;
+        width: 150px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    .box1 button:hover {
+        background-color:  #6fd66c; /* Green */
+        color: white;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background:linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .box h1{
+        color: white;
+        margin-left: 0px;
+        font-size: 50px;
+        word-wrap: break-word;
+    }
+    .box1{
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 30%;
+        box-shadow: 5px 7px #48c1b9;
+        
+    }
+    .box1 h3{
+        color: rgb(108, 196, 231);
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        word-wrap: break-word;
+    }
+    .box1 label{
+        font-size: 15px;
+        color:black ;
+        font-weight: 450;
+        margin-left: 30px;
+
+    
+    }
+    .box1 button {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #6fd66c;
+        width: 150px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    .box1 button:hover {
+        background-color:  #6fd66c; /* Green */
+        color: white;
+    }
+
+}
+    
