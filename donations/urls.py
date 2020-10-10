@@ -17,6 +17,7 @@ urlpatterns=[
     path('logout1/',views.logout1,name="logout1"),
     path('event1/',views.event1,name="event1"),
     path('upcoming/',views.upcoming,name="upcoming"),
+   
 
 
 

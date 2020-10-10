@@ -72,63 +72,65 @@
     </head>
 
     <body>
-        <div class="header-area">
-            <div class="main-header ">
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.jpg' %}" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">                                                                                          
-                                                <li><a href="/">Home</a></li>
-                                                <li><a href="/">What we Do</a></li>
-                                                <li><a href="{% url 'home1' %}">NGO</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="{% url 'login1' %}">Log In</a></li>
-                                                        <li><a href="{% url 'signup1' %}">Sign Up</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Public</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="{% url 'login2' %}">Log In</a></li>
-                                                        <li><a href="{% url 'signup2' %}">Sign Up</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Volunteer</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="{% url 'login' %}">Log In</a></li>
-                                                        <li><a href="{% url 'signup' %}">Sign Up</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#contact">Contact</a></li>
-                                        </nav>
-                                    </div>
-                                    <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-20">
-                                        <a href="#" class="btn header-btn">Upcoming Events</a>
+        <header>
+            <!-- Header Start -->
+            <div class="header-area">
+                <div class="main-header ">
+                    <div class="header-bottom  header-sticky">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <!-- Logo -->
+                                <div class="col-xl-2 col-lg-2">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="{% static 'assets/img/logo/logo.jpg' %}" alt=""></a>
                                     </div>
                                 </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="col-xl-10 col-lg-10">
+                                    <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                        <!-- Main-menu -->
+                                        <div class="main-menu d-none d-lg-block">
+                                            <nav>
+                                                <ul id="navigation">                                                                                          
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#about">What we Do</a></li>
+                                                    <li><a href="#">NGO</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="{% url 'login1' %}">Log In</a></li>
+                                                            <li><a href="{% url 'signup1' %}">Sign Up</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Public</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="{% url 'login2' %}">Log In</a></li>
+                                                            <li><a href="{% url 'signup2' %}">Sign Up</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">Volunteer</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="{% url 'login' %}">Log In</a></li>
+                                                            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#contact">Contact</a></li>
+                                                    <li><a href="{% url 'upcoming' %}" class="btn header-btn">Upcoming Events</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <!-- Header-btn -->
+                                       
+                                    </div>
+                                </div> 
+                                <!-- Mobile Menu -->
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Header End -->
-    </header>
+            <!-- Header End -->
+        </header>
         <div class="box">
             <br>
             <br>

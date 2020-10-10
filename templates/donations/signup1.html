@@ -1,162 +1,89 @@
 <!DOCTYPE html>
-{%load static%}
-<html>
-    <head>
-        <title>login form</title>
-        
-        <style>
-            body{
-                background-repeat: no-repeat;
-                background-size: cover;
-                background: linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%);  /* fallback for old browsers */
-                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+{% load static %}
+<html lang="en">
+<head>
+	<title>Login V8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{% static 'Login_v8images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8vendor/animate/animate.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'Login_v8/css/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="{% url 'signup1' %}" method="POST">
+                    {% csrf_token %}
+					<span class="login100-form-title">
+						Signup as NGO
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter your name">
+						<input class="input100" type="text" name="name" placeholder="FULL NAME">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+						<input class="input100" type="text" name="username" placeholder="USERNAME">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter Email">
+						<input class="input100" type="text" name="email" placeholder="EMAIL">
+						<span class="focus-input100"></span>
+					</div>
 
-                /* background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(153, 0, 255, 1) 11%, rgba(0, 153, 255, 1) 20%, rgba(255, 255, 255, 1) 28%, rgba(255, 255, 255, 1) 100%); */
-
-            }
-            .main_div{
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-                padding:25px;
-                padding-top:30px;
-                border-radius: 5px;
-                width:400px;
-                height:380px;
-                background-color:white;
-            }
-            
-            label {
-                position: absolute;
-                top: 0;
-                left: 0;
-                transition: font-size .5s, color .5s, left .5s, top .5s;
-            }
-
-            input:not(.placeholder-shown) + label,
-            input:not(:placeholder-shown) + label,
-            input:hover + label,
-            label:hover {
-                top: -1.4em;
-                left: -.5em;
-                font-size: .8em;
-                color: rgb(100, 216, 224);
-            }
-            input,label {
-                font-family: sans-serif;
-                font-size: 15px;
-                padding: .75em .5em .5em;
-            }
-
-            ::-webkit-input-placeholder {
-                /* Chrome/Opera/Safari */
-                color: transparent;
-            }
-
-            ::-moz-placeholder {
-                /* Firefox 19+ */
-                color: transparent;
-            }
-
-            :-ms-input-placeholder {
-                /* IE 10+ */
-                color: transparent;
-            }
-
-            :-moz-placeholder {
-                /* Firefox 18- */
-                color: transparent;
-            }
-            .chat_field {
-                font-size: 16px;
-                position: relative;
-                color: gray;
-                /* float:left; */
-            }
-
-            .-comp input {
-                border: none;
-                border-bottom: 1px solid #808080;
-                outline: none;
-                width:90%
-            }
-
-            .-comp input:focus,
-            .-comp input:hover {
-                border:none;
-                border-bottom: 1.5px solid #6fd66c;
-            }
-            button{
-                 /* Green */
-                background: linear-gradient(90deg, #6fd66c 0%, #48c1b9 100%); 
-                border:none;
-                border-radius: 5px;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                font-size: 16px;
-                margin-left: 290px;
-            }
-
-
-        </style>
-    </head>
-    <body>
-
-        <div style="display: block;margin-left: 26%;margin-top:2%;">
-            <div style="float: left;">
-            <img src="{% static 'assets/img/logo/logo1.png' %}" style="margin-left: 140px; width: 70px;height: 70px;border-radius: 50%;"  alt="">
-        </div>
-        <div style="float: right;">
-            <header style="font-size: 30px;font-family: Helvetica;color:white;margin-right: 530px;margin-top: 20px;">Sign Up as NGO</header>
-        </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        
-
-        <form action="{% url 'signup1' %}" method = "POST">
-            {% csrf_token %}
-            <div style="width:60%;margin-left: 33%;margin-top:3%;">
-                <div class="main_div" style="float:left">
-                    <div class="chat_field -comp" >
-                        <input type="text" name="name" class="placeholder-shown" placeholder="Name of NGO" required>
-                        <label>Name of NGO</label>
-                    </div>
+					<div class="wrap-input100 validate-input" data-validate = "Please enter password">
+						<input class="input100" type="password" name="password" placeholder="PASSWORD">
+						<span class="focus-input100"></span>
+					</div>
                     <br>
-                    <br>
-                    <div class="chat_field -comp" >
-                        <input type="text" name="username" class="placeholder-shown" placeholder="username" required>
-                        <label>User Name</label>
-                    </div>
-                    <br>
-                    <br>
-
-                    <div class="chat_field -comp" >
-                        <input type="email"  class="placeholder-shown" name="email" placeholder="email" required>
-                        <label>Email</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="chat_field -comp" >
-                        <input type="password" class="placeholder-shown"  name="password" placeholder="password"  required>
-                        <label>Password</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="chat_field -comp" >
-                        <input type="text" class="placeholder-shown"  name="district" placeholder="District"  required>
-                        <label>District</label>
-                    </div>
-                </div>
-                
-
-                
-            <div style="position: absolute;margin-right:50%;margin-top:27%;display:block;width:59%;">
-                <button>Submit</button>
-            </div>
-        </form>
-
-        
-    </body>
-</html>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter District">
+						<input class="input100" type="text" name="district" placeholder="DISTRICT">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							SUBMIT
+						</button>
+						<br>
+						<br>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'Login_v8/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'Login_v8/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Login_v8/js/main.js' %}"></script>

@@ -59,8 +59,8 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#about">What we Do</a></li>
+                                                <li><a href="/">Home</a></li>
+                                                <li><a href="/">What we Do</a></li>
                                                 <li><a href="#">NGO</a>
                                                     <ul class="submenu">
                                                         <li><a href="{% url 'login1' %}">Log In</a></li>
@@ -70,13 +70,14 @@
                                                 <li><a href="{% url 'gathering' %}">Gatherings</a></li>
                                                 <li><a href="#contact">Contact</a></li>
                                                 <li><a href="{% url 'logout1' %}">Logout</a></li>
+                                                <li><div class="header-right-btn d-none d-lg-block ml-20">
+                                                    <a href="{% url 'upcoming' %}" class="btn header-btn">Upcoming Events</a>
+                                                </div></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-20">
-                                        <a href="{% url 'upcoming' %}" class="btn header-btn">Upcoming Events</a>
-                                    </div>
+                                    
                                 </div>
                             </div> 
                             <!-- Mobile Menu -->
