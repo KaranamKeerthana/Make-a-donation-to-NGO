@@ -1,6 +1,11 @@
 # Make-a-donation-to-NGO
 An Initiative to connect all the local Volunteer's with local NGO's
 
+# How do I run this?
+
+To view the website, [CLICK HERE](https://dark-knights.herokuapp.com/#)
+
+To view our Devfolio submission, [CLICK HERE] (https://devfolio.co/submissions/giving-back-app)
 
  # The problem ‘Giving Back’ solves:
  
