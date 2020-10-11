@@ -17,5 +17,7 @@ An Initiative to connect all the local Volunteer's with local NGO's
 
 
 •	Since we are starters, backend and database problems were quite challenging.
+
 •	Initially, we committed so many mistakes taking login and signup details while authorization of login details with our database.
+
 •	But after hours of effort, we were finally able to fix it.
